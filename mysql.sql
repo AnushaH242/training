@@ -18,3 +18,5 @@ insert into flight values('vistara',33,'0820', '1020', 30);
 insert into ticket values('111', '001', '11', 1000);
 insert into ticket values('222', '002', '22', 2000);
 insert into ticket values('333', '003', '33', 2500);
+
+select a.pass_ID, b.flight_no, c.ticket_no from passenger a, flight b, ticket c where a.flight_no = b.flight_no;
